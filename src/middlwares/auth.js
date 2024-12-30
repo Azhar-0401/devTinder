@@ -8,6 +8,7 @@ const adminAuth = (req, res, next) => {
       next();
     }
   };
+  
   const userAuth = (req, res, next) => {
     console.log("User auth is getting checked!!");
     const token = "xyzabc";
@@ -18,6 +19,7 @@ const adminAuth = (req, res, next) => {
       next();
     }
   };
+  
   module.exports = {
     adminAuth,
     userAuth,
